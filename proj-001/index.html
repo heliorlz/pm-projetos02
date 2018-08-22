@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Projeto 001</title>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="height-data">
+            <h1 class="data-title">Altura em metros</h1>
+            <form class="form-data">    
+                <input class="input-data" type="text" id="height" name="height">
+            </form>
+        </section>
+        <section class="weight-data">
+            <h1 class="data-title">Peso em quilos</h1>
+            <form class="form-data">
+                <input class="input-data" type="text" id="weight" name="weight">
+            </form>
+        </section>
+        <section class="imc-result">
+            <button type="button" class="btn-imc" onclick="calculateImc()">Imc</button>
+        </section>
+    </main>
+
+<script src="js/calculateimc.js"></script>
+</body>
+</html>
