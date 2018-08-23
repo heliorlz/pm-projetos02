@@ -16,17 +16,28 @@
         <section class="height-data">
             <h1 class="data-title">Altura em metros</h1>
             <form class="form-data">    
-                <input class="input-data" type="text" id="height" name="height">
+                <input class="input-data" type="number" id="height" name="height">
             </form>
         </section>
         <section class="weight-data">
             <h1 class="data-title">Peso em quilos</h1>
             <form class="form-data">
-                <input class="input-data" type="text" id="weight" name="weight">
+                <input class="input-data" type="number" id="weight" name="weight">
             </form>
         </section>
         <section class="imc-result">
-            <button type="button" class="btn-imc" onclick="calculateImc()">Imc</button>
+            <div class="btn">
+                <button type="button" class="btn-imc">Imc</button>
+            </div>
+            <div class="result">
+                <a href="#" class="back">
+                    <span>Voltar</span>
+                </a>
+                <div class="text">
+                    <p class="imc-value">41,5</p>
+                    <small class="imc-desc">Obesidade Mórbida</small>
+                </div>
+            </div>
         </section>
     </main>
 
