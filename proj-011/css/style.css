@@ -66,7 +66,7 @@ body, input, button {
     flex-direction: column;
 }
 
-.container .btn {
+.container .div-btn {
     background-color: #ffffff;
     height: 187px;
     width: 100%;
@@ -75,7 +75,7 @@ body, input, button {
     justify-content: center;
 }
 
-.container .result {
+.container .div-result {
     background-color: #ffffff;
     height: 187px;
     width: 100%;
@@ -86,11 +86,11 @@ body, input, button {
 
 
 /* adiciona class hidden pelo js e esconde a div */
-.result.hidden {
+.div-result.hidden {
     display: none;
 }
 
-.btn.hidden {
+.div-btn.hidden {
     display: none;
 }
 
@@ -109,7 +109,7 @@ body, input, button {
     margin-bottom: 5px;
 }
 
-.container .result a {
+.container .div-result a {
     background-image: url(../img/backbtn.png);
     background-repeat: no-repeat;
     width: 41px;
@@ -117,7 +117,7 @@ body, input, button {
     margin-left: 35px;
 }
 
-.container .result span {
+.container .div-result span {
     visibility: hidden;
 }
 
