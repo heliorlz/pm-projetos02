@@ -1,12 +1,18 @@
 function showResult() {
-    document.querySelector(".result").classList.remove("hidden")
-    document.querySelector(".btn").classList.add("hidden")
+
+    document.querySelector(".div-result").classList.remove("hidden")
+    document.querySelector(".div-btn").classList.add("hidden")
 
 }
+
+const btn = document.querySelector(".btn-imc")
+btn.onclick = showResult
 
 function showBtnImc() {
-    document.querySelector(".result").classList.add("hidden")
-    document.querySelector(".btn").classList.remove("hidden")
+    document.querySelector(".div-result").classList.add("hidden")
+    document.querySelector(".div-btn").classList.remove("hidden")
 
 }
 
+const result = document.querySelector(".back")
+result.onclick = showBtnImc
