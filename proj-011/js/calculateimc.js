@@ -30,6 +30,7 @@ function calculateResult() {
     // através do toLocaleString, para formatarmos a saída da melhor forma 
     document.querySelector('.imc-value').innerHTML = imc.toLocaleString('pt-BR', {maximumFractionDigits: 2})
     document.querySelector('.imc-desc').innerHTML = descriptionIMC(imc)
+    console.log(descriptionIMC(imc))
 }
 
 // função que pega os parametros para calcular o imc 
@@ -39,25 +40,26 @@ function calculateIMC(altura, peso) {
 
 function descriptionIMC(imc) {
     // devemos utilizar os parenteses juntando as expressoes
+    console.log(imc)
     if (imc < 16) {
         return 'Magreza Grave'
     } 
-    else if ((imc >= 16) && (imc < 17)) {
+    else if (imc >= 16 && imc < 17) {
         return 'Magreza Moderada'
     } 
-    else if ((imc >= 17) && (imc < 18,5)) {
+    else if (imc >= 17 && imc < 18.5) {
         return 'Magreza Leve'
     } 
-    else if ((imc >= 18,5) && (imc < 25)) {
+    else if (imc >= 18.5 && imc < 25) {
         return 'Saudável'
     } 
-    else if ((imc >= 25) && (imc < 30)) {
+    else if (imc >= 25 && imc < 30) {
         return 'Sobrepeso'
     } 
-    else if ((imc >= 30) && (imc < 35)) {
+    else if (imc >= 30 && imc < 35) {
         return 'Obesidade'
     } 
-    else if ((imc >= 35) && (imc < 40)) {
+    else if (imc >= 35 && imc < 40) {
         return 'Obesidade Severa'
     } 
     // o ultimo else só funciona se não dermos condicao, pois da erro
