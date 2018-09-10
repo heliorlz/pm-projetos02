@@ -1,0 +1,168 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+}
+
+
+/* styling all the buttons */
+button {
+    border: 1px solid #cdcccc;
+    background-color: #d8d8d8;
+    color: #000000;
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* DIV where we apply the grid layout */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 125px);
+    grid-template-rows: repeat(5, 133px);
+}
+
+
+
+
+
+
+/* display of the converts */
+.display-numbers {
+    background-color: #202020;
+    grid-column: 1/4;
+    grid-row: 1;
+}
+
+
+
+
+
+
+/* displaying the btn-numbers in the right places */
+.btn-seven {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.btn-eight {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.btn-nine {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.btn-four {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.btn-five {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.btn-six {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.btn-one {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.btn-two {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.btn-three {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.btn-zero {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+
+
+
+
+/* styling the form of the action button, inserting the image */
+.btn-start h1, .btn-calculate h1, .btn-calculated h1 {
+    background-image: url(../img/btn-calculate-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 77px;
+    height: 80px;
+    margin: 0 auto; /* centralizing the image button */
+}
+
+.btn-start span, .btn-calculate span, .btn-calculated span {
+    visibility: hidden;
+}
+
+
+
+
+
+
+/* changing the action button displayed */
+.btn-start.hidden {
+    display: none;
+}
+
+.btn-calculate.hidden {
+    display: none;
+}
+
+.btn-calculated.hidden {
+    display: none;
+}
+
+
+
+
+
+
+/* changing the color of the button displayed */
+.btn-start, .btn-calculate, .btn-calculated {
+    border: none;
+}
+
+.btn-start {
+    background-color: #4a90e2;
+}
+
+.btn-calculate {
+    background-color: #f98611;
+}
+
+.btn-calculated {
+    background-color: #27ae60;
+}
+
+
+
+
+
+
+.btn-clear {
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    grid-column: 3;
+    grid-row: 5;
+}
