@@ -101,36 +101,40 @@ button {
 
 
 /* styling the form of the action button, inserting the image */
-.btn-start h1, .btn-calculate h1, .btn-calculated h1 {
-    background-image: url(../img/btn-calculate-image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 77px;
-    height: 80px;
-    margin: 0 auto; /* centralizing the image button */
+.btn-start {
+    display: flex;
+    justify-content: center;
+    background-color: #4a90e2;
+    border: 1px solid #4a90e2;
 }
 
-.btn-start span, .btn-calculate span, .btn-calculated span {
+.btn-start span {
     visibility: hidden;
 }
 
+.btn-start.dolar h1 {
+    background-image: url(../img/btn-calculate-dolar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 71px;
+    height: 73px;
+    margin: 0 auto;
+}
 
+.btn-start.real h1 {
+    background-image: url(../img/btn-calculate-real.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 71px;
+    height: 73px;
+    margin: 0 auto;
+}
 
 
 
 
 /* changing the action button displayed */
-.btn-start.hidden {
-    display: none;
-}
 
-.btn-calculate.hidden {
-    display: none;
-}
-
-.btn-calculated.hidden {
-    display: none;
-}
 
 
 
@@ -138,21 +142,7 @@ button {
 
 
 /* changing the color of the button displayed */
-.btn-start, .btn-calculate, .btn-calculated {
-    border: none;
-}
 
-.btn-start {
-    background-color: #4a90e2;
-}
-
-.btn-calculate {
-    background-color: #f98611;
-}
-
-.btn-calculated {
-    background-color: #27ae60;
-}
 
 
 
